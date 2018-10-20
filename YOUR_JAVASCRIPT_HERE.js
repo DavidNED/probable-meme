@@ -28,13 +28,24 @@ hero.weapon = hero.inventory[0];
 
 }//equipWeapon
 
+const pickUpItem = (hero, object) => {
+hero.inventory.push(object);
+
+}
+
+document.getElementById('dagger').onclick = function (){
+hero.inventory.push({type: 'dagger', damage: 2});
+}
 
 
-const pickUpItem = (firstObj, object) => {
+
+
+
+
+
+/*const pickUpItem = (firstObj, object) => {
 firstObj.inventory[1] = object;
 
 const newObj = {type: 'dagger', 'damage': 2}
 firstObj.inventory.push(newObj);
-}
-
-
+}*/
